@@ -7,7 +7,7 @@ cap = cv2.VideoCapture(0)
 
 marker_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_6X6_100)
 parameters =  cv2.aruco.DetectorParameters_create()
-color = (0,0,255)
+color = (0,255,0)
 
 while(True):
     ret, frame = cap.read()
