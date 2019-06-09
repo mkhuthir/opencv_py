@@ -2,28 +2,24 @@
 
 import numpy as np
 import cv2
-import cv2.aruco as aruco
-
 
 cap = cv2.VideoCapture(0)
+
+marker_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_6X6_100)
+parameters =  cv2.aruco.DetectorParameters_create()
+color = (0,0,255)
 
 while(True):
     ret, frame = cap.read()
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    aruco_dict = aruco.Dictionary_get(aruco.DICT_6X6_100)
+    corners, ids, rejectedImgPoints = cv2.aruco.detectMarkers(gray, marker_dict, parameters=parameters)
 
-    parameters =  aruco.DetectorParameters_create()
+    frame = cv2.aruco.drawDetectedMarkers(frame, corners, ids, color)
 
-    corners, ids, rejectedImgPoints = aruco.detectMarkers(gray, aruco_dict, parameters=parameters)
+    cv2.imshow('Video',frame)
 
-    if len(corners)>0 :
-        print(ids)
-
-    gray = aruco.drawDetectedMarkers(gray, corners)
-
-    cv2.imshow('frame',gray)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
