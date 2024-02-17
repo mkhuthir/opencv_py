@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+# Muthanna Alwahash
+# Feb 2024
 
-import cv2
+import cv2 as cv
 
 # Read Image
-img = cv2.imread('../img/fruits.jpg')
+img = cv.imread('../img/fruits.jpg')
 
 print("Height=",len(img))
 print("Width=",len(img[0]))

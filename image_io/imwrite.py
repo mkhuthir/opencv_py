@@ -1,18 +1,20 @@
 #!/usr/bin/python3
+# Muthanna Alwahash
+# Feb 2024
 
-import cv2
+import cv2 as cv
 
 # Read Image
-img = cv2.imread('../img/fruits.jpg')
+img = cv.imread('../img/fruits.jpg')
 
 # Write image
-cv2.imwrite('../img/output.jpg',img)
+cv.imwrite('../img/output.jpg',img)
 
 # Show image
-cv2.namedWindow('image',cv2.WINDOW_NORMAL)
-cv2.imshow('image',img)
+cv.namedWindow('image',cv.WINDOW_NORMAL)
+cv.imshow('image',img)
 
 # Wait for a key
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+cv.waitKey(0)
+cv.destroyAllWindows()
 
