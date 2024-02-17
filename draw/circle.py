@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import numpy as np
-import cv2
+import cv2 as cv
 
 # Define parameters
 center = (250,250)
@@ -13,12 +13,12 @@ thickness = -1
 img = np.zeros((512,512,3), np.uint8)
 
 # Draw circle
-cv2.circle(img, center, radius, color, thickness)
+cv.circle(img, center, radius, color, thickness)
 
 # Show image
-cv2.imshow('Circle',img)
+cv.imshow('Circle',img)
 
 # Wait for a key-press then destroy window and exit
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+cv.waitKey(0)
+cv.destroyAllWindows()
 

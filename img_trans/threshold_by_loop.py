@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
 import numpy as np
-import cv2
+import cv2 as cv
 
 # Read image in black/white format
-bw = cv2.imread('../img/detect_blob.png', 0)
+bw = cv.imread('../img/detect_blob.png', 0)
 height, width = bw.shape[0:2]
 
 # Create a black image same size of bw
@@ -20,9 +20,9 @@ for row in range(0,height):
 			binary[row][col]=255
 
 # Show Results
-cv2.imshow("Org. Image",bw)
-cv2.imshow("Slow Binary Thr.",binary)
+cv.imshow("Org. Image",bw)
+cv.imshow("Slow Binary Thr.",binary)
 
 # Wait for a key-press to exit
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+cv.waitKey(0)
+cv.destroyAllWindows()

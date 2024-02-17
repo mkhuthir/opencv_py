@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import cv2
+import cv2 as cv
 import numpy as np
 
 # Define parameters
@@ -18,12 +18,12 @@ img = np.zeros((300, 300, 3), dtype='uint8')
 
 
 # Draw Polylines
-cv2.polylines(img, [points], isClosed, color )
+cv.polylines(img, [points], isClosed, color )
 
 # Show image
-cv2.imshow('Polylines',img)
+cv.imshow('Polylines',img)
 
 # Wait for a key-press then destroy window and exit
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+cv.waitKey(0)
+cv.destroyAllWindows()
 

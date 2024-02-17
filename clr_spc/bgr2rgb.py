@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 
-import cv2
+import cv2 as cv
 import matplotlib.pyplot as plt
 
 # Read sample BGR image
-bgr_img = cv2.imread('../img/fruits.jpg')
+bgr_img = cv.imread('../img/fruits.jpg')
 print ("Image Shape",bgr_img.shape)
 
 # Convert BGR to RGB for Matplotlib use.
-rgb_img = cv2.cvtColor(bgr_img, cv2.COLOR_BGR2RGB) 
+rgb_img = cv.cvtColor(bgr_img, cv.COLOR_BGR2RGB) 
 
 # Show images using Matplotlib
 # note that BGR will show wrong colors since Matplotlib is using RGB format

@@ -1,24 +1,24 @@
 #!/usr/bin/python3
 
 import numpy as np
-import cv2
+import cv2 as cv
 
 # Load BGR image
-bgr = cv2.imread("../img/butterfly.jpg", 1)
+bgr = cv.imread("../img/butterfly.jpg", 1)
 
 # Show BGR image
-cv2.imshow("BGR",bgr)
-cv2.moveWindow("BGR",0,0)
+cv.imshow("BGR",bgr)
+cv.moveWindow("BGR",0,0)
 
 print(bgr.shape)
 height,width,channels = bgr.shape
 
 # Convert image from BGR to Gray
-gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
-cv2.imwrite("../img/butterfly_gray.jpg",gray)
+gray = cv.cvtColor(bgr, cv.COLOR_BGR2GRAY)
+cv.imwrite("../img/butterfly_gray.jpg",gray)
 
-cv2.imshow("Gray",gray)
-cv2.moveWindow("Gray",width,0)
+cv.imshow("Gray",gray)
+cv.moveWindow("Gray",width,0)
 
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+cv.waitKey(0)
+cv.destroyAllWindows()

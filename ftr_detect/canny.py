@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 
 import numpy as np
-import cv2
+import cv2 as cv
 
 # Load image in colors
-img = cv2.imread("../img/tomatoes.jpg",1)
-cv2.imshow("Original",img)
+img = cv.imread("../img/tomatoes.jpg",1)
+cv.imshow("Original",img)
 
 # Apply Canny filter
-edges = cv2.Canny(img, 100, 70)
-cv2.imshow("Canny",edges)
+edges = cv.Canny(img, 100, 70)
+cv.imshow("Canny",edges)
 
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+cv.waitKey(0)
+cv.destroyAllWindows()

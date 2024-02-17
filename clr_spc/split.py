@@ -1,42 +1,42 @@
 #!/usr/bin/python3
 
 import numpy as np
-import cv2
+import cv2 as cv
 
 # load BGR image
-bgr = cv2.imread("../img/butterfly.jpg", 1)
+bgr = cv.imread("../img/butterfly.jpg", 1)
 
 # Show BGR image
-cv2.imshow("Image",bgr)
-cv2.moveWindow("Image",0,0)
+cv.imshow("Image",bgr)
+cv.moveWindow("Image",0,0)
 
 print(bgr.shape)
 height,width,channels = bgr.shape
 
 # Split BGR image
-b,g,r = cv2.split(bgr)
+b,g,r = cv.split(bgr)
 
 # Create 3xwidth empty image
 rgb_split = np.empty([height,width*3,3],'uint8')
 
 # Copy channels into empty image
-rgb_split[:, 0:width] = cv2.merge([b,b,b])
-rgb_split[:, width:width*2] = cv2.merge([g,g,g])
-rgb_split[:, width*2:width*3] = cv2.merge([r,r,r])
+rgb_split[:, 0:width] = cv.merge([b,b,b])
+rgb_split[:, width:width*2] = cv.merge([g,g,g])
+rgb_split[:, width*2:width*3] = cv.merge([r,r,r])
 
 # Show image
-cv2.imshow("Split BGR",rgb_split)
-cv2.moveWindow("Split BGR",0,height)
+cv.imshow("Split BGR",rgb_split)
+cv.moveWindow("Split BGR",0,height)
 
 # Convert BGR to HSV and split it
-hsv = cv2.cvtColor(bgr, cv2.COLOR_BGR2HSV)
-h,s,v = cv2.split(hsv)
+hsv = cv.cvtColor(bgr, cv.COLOR_BGR2HSV)
+h,s,v = cv.split(hsv)
 hsv_split = np.concatenate((h,s,v),axis=1)
 
 # Show image
-cv2.imshow("Split HSV",hsv_split)
-cv2.moveWindow("Split HSV",0,height*2)
+cv.imshow("Split HSV",hsv_split)
+cv.moveWindow("Split HSV",0,height*2)
 
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+cv.waitKey(0)
+cv.destroyAllWindows()
 
