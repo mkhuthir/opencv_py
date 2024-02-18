@@ -4,7 +4,7 @@ import numpy as np
 import cv2 as cv
 
 # Load image in BGR colors
-img = cv.imread('../_img/faces.jpeg',1)
+img = cv.imread('../_img/faces1.jpeg',1)
 
 # Convert to HSV and split into channels
 hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
