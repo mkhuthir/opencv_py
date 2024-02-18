@@ -4,7 +4,7 @@ import numpy as np
 import cv2 as cv
 
 # Read faces image and convert from BGR to Gray
-img = cv.imread("../_img/faces.jpeg",1)
+img = cv.imread("../_img/faces1.jpeg",1)
 gray = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 
 # Load Haar cascade classifier file
