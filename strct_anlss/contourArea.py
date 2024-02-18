@@ -17,7 +17,7 @@ thresh = cv.adaptiveThreshold(blur, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRES
 cv.imshow("Binary",thresh)
 
 # Find Contours
-_, contours, _ = cv.findContours(thresh, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+contours, _ = cv.findContours(thresh, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
 print("Number of found contours:", len(contours))
 
 # Filter Contours based on its area
