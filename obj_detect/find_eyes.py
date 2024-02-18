@@ -4,7 +4,7 @@ import numpy as np
 import cv2 as cv
 
 # Load image and convert to gray
-img = cv.imread("../img/faces.jpeg",1)
+img = cv.imread("../_img/faces.jpeg",1)
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
 # load haae cascade file

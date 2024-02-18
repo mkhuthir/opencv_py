@@ -3,8 +3,8 @@
 import numpy as np
 import cv2 as cv
 
-template = cv.imread('../img/template.jpg',0)
-frame = cv.imread("../img/players.jpg",0)
+template = cv.imread('../_img/template.jpg',0)
+frame = cv.imread("../_img/players.jpg",0)
 
 cv.imshow("Frame",frame)
 cv.imshow("Template",template)
