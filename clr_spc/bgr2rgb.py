@@ -4,7 +4,7 @@ import cv2 as cv
 import matplotlib.pyplot as plt
 
 # Read sample BGR image
-bgr_img = cv.imread('../img/fruits.jpg')
+bgr_img = cv.imread('../_img/fruits.jpg')
 print ("Image Shape",bgr_img.shape)
 
 # Convert BGR to RGB for Matplotlib use.

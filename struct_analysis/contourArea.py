@@ -5,7 +5,7 @@ import cv2 as cv
 import random
 
 # load color image
-img = cv.imread("../img/fuzzy.png",1)
+img = cv.imread("../_img/fuzzy.png",1)
 cv.imshow("Original",img)
 
 # Convert from BGR to HSV and apply GaussianBlur

@@ -8,7 +8,7 @@ img = cv.imread("../img/faces.jpeg",1)
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
 # load haae cascade file
-path = "../xml/haarcascade_eye.xml"
+path = "xml/haarcascade_eye.xml"
 eye_cascade = cv.CascadeClassifier(path)
 
 # Detect eyes

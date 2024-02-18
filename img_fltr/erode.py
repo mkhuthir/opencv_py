@@ -3,7 +3,7 @@
 import cv2 as cv
 import numpy as np
 
-image = cv.imread("../img/thresh.jpg")
+image = cv.imread("../_img/thresh.jpg")
 cv.imshow("Original",image)
 
 kernel = np.ones((5,5),'uint8')

@@ -3,7 +3,7 @@
 import cv2 as cv
 
 # Read image
-image = cv.imread("../img/thresh.jpg")
+image = cv.imread("../_img/thresh.jpg")
 cv.imshow("Original",image)
 
 # Apply filter then show result

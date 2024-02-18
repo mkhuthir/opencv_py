@@ -5,10 +5,10 @@
 import cv2 as cv
 
 # Read Image
-img = cv.imread('../img/fruits.jpg')
+img = cv.imread('../_img/fruits.jpg')
 
 # Write image
-cv.imwrite('../img/output.jpg',img)
+cv.imwrite('../_img/output.jpg',img)
 
 # Show image
 cv.namedWindow('image',cv.WINDOW_NORMAL)

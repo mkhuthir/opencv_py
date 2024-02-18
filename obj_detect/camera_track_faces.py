@@ -7,7 +7,7 @@ import cv2 as cv
 cap = cv.VideoCapture(0)
 
 # Load Haar cascade classifier file
-path = "../xml/haarcascade_frontalface_default.xml"
+path = "xml/haarcascade_frontalface_default.xml"
 faceCascade = cv.CascadeClassifier(path)
 
 while(True):

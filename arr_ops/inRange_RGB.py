@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Read sample image
-org_img = cv.imread('../img/rgb_test.png')
+org_img = cv.imread('../_img/rgb_test.png')
 
 # Threshold min and max BGR limits
 min = np.array([0,0,0  ],np.uint8)

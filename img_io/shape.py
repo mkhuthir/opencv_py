@@ -5,7 +5,7 @@
 import cv2 as cv
 
 # Read Image
-img = cv.imread('../img/fruits.jpg')
+img = cv.imread('../_img/fruits.jpg')
 
 print("Height=",len(img))
 print("Width=",len(img[0]))

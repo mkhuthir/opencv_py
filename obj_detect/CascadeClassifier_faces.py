@@ -8,7 +8,7 @@ img = cv.imread("../img/faces.jpeg",1)
 gray = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 
 # Load Haar cascade classifier file
-path = "../xml/haarcascade_frontalface_default.xml"
+path = "xml/haarcascade_frontalface_default.xml"
 face_cascade = cv.CascadeClassifier(path)
 
 # Detect faces

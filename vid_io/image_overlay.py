@@ -3,7 +3,7 @@
 import cv2 as cv
 
 # Load the overlay image. size should be smaller than video frame size
-img = cv.imread('../img/logo.png')
+img = cv.imread('../_img/logo.png')
 
 # Get Image dimensions
 img_height, img_width, _ = img.shape

@@ -2,7 +2,7 @@
 
 import cv2 as cv
 
-img = cv.imread("../img/players.jpg",1)
+img = cv.imread("../_img/players.jpg",1)
 
 # Rotation
 M = cv.getRotationMatrix2D((0,0), -30, 1)

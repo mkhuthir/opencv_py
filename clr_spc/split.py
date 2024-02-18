@@ -4,7 +4,7 @@ import numpy as np
 import cv2 as cv
 
 # load BGR image
-bgr = cv.imread("../img/butterfly.jpg", 1)
+bgr = cv.imread("../_img/butterfly.jpg", 1)
 
 # Show BGR image
 cv.imshow("Image",bgr)

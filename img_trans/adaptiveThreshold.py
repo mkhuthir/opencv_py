@@ -3,7 +3,7 @@
 import cv2 as cv
 
 # Read image in black/white format
-bw_img = cv.imread('../img/sudoku.png', 0)
+bw_img = cv.imread('../_img/sudoku.png', 0)
 height, width = bw_img.shape[0:2]
 
 # Threshold values to be used

@@ -4,7 +4,7 @@ import numpy as np
 import cv2 as cv
 
 # Load image in colors
-img = cv.imread("../img/tomatoes.jpg",1)
+img = cv.imread("../_img/tomatoes.jpg",1)
 cv.imshow("Original",img)
 
 # Convert from BGR to HSV

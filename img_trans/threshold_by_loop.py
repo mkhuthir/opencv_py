@@ -4,7 +4,7 @@ import numpy as np
 import cv2 as cv
 
 # Read image in black/white format
-bw = cv.imread('../img/detect_blob.png', 0)
+bw = cv.imread('../_img/detect_blob.png', 0)
 height, width = bw.shape[0:2]
 
 # Create a black image same size of bw

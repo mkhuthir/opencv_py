@@ -7,7 +7,7 @@ import cv2 as cv
 cap = cv.VideoCapture(0)
 
 # load haae cascade file
-path = "../xml/haarcascade_eye.xml"
+path = "xml/haarcascade_eye.xml"
 eyeCascade = cv.CascadeClassifier(path)
 
 while(True):

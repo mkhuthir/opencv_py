@@ -5,7 +5,7 @@
 import cv2 as cv
 
 # Read Image
-img = cv.imread('../img/fruits.jpg')
+img = cv.imread('../_img/fruits.jpg')
 
 # Show image
 cv.namedWindow('image',cv.WINDOW_NORMAL)

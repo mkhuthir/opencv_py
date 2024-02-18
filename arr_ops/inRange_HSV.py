@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Read sample image
-org_img=cv.imread('../img/fruits.jpg')                
+org_img=cv.imread('../_img/fruits.jpg')                
 
 # Convert color space from BGR to HSV
 hsv_img = cv.cvtColor(org_img,cv.COLOR_BGR2HSV)

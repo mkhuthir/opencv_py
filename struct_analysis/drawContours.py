@@ -4,7 +4,7 @@ import numpy as np
 import cv2 as cv
 
 # Read image in color
-img = cv.imread('../img/detect_blob.png',1)
+img = cv.imread('../_img/detect_blob.png',1)
 
 # Convert to Gray
 gray = cv.cvtColor(img, cv.COLOR_RGB2GRAY)
