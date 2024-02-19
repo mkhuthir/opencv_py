@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+# Muthanna Alwahash
+# Feb 2024
+
 
 import numpy as np
 import cv2 as cv
