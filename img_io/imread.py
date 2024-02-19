@@ -8,7 +8,7 @@ import cv2 as cv
 img = cv.imread('../_img/fruits.jpg')
 
 # Show image
-cv.namedWindow('image',cv.WINDOW_NORMAL)
+cv.namedWindow('image', cv.WINDOW_AUTOSIZE)
 cv.imshow('image',img)
 
 # Wait for a key
