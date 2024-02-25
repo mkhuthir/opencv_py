@@ -11,9 +11,5 @@ print("Name    :",cv.__name__)
 print("Doc     :",cv.__doc__)
 print("Version :",cv.__version__)
 print("Path    :",cv.__path__)
-print("Files   :",cv.__file__)
+print("File    :",cv.__file__)
 print("\n")
-
-
-
-
